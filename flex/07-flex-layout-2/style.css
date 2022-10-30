@@ -5,19 +5,29 @@ body {
 }
 
 .header {
-  height: 72px;
+  display: flex;
+  height: 62px;
   background: darkmagenta;
   color: white;
+  align-items: center;
+  font-weight: bolder;
+  font-size: larger;
+  padding-left: 10px;
 }
 
 .footer {
+  display: flex;
   height: 72px;
   background: #eee;
   color: darkmagenta;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .sidebar {
-  width: 300px;
+  width: 500px;
+  height: auto;
   background: royalblue;
 }
 
@@ -25,4 +35,29 @@ body {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  width: 300px;
+  height: 300px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: -30px;
+  list-style-type: none;
+}
+
+.all {
+  display: flex;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
